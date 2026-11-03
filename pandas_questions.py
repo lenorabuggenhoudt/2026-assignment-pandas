@@ -90,7 +90,6 @@ def plot_referendum_map(referendum_result_by_regions):
         right_index=True,
         how='inner'
     )
-
     merged = gpd.GeoDataFrame(merged, geometry='geometry')
     merged.plot(column='ratio', legend=True, cmap='RdBu', edgecolor='black')
 
